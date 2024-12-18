@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FaveColor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="prepPage">
+        <div id="langSwitcher">
+            Language:
+            <a href="index.html" lang="ja">JA</a> / EN
+        </div>
+        <h1>Show your FaveColor!</h1>
+        <div>
+            <label for="mainColor">Main Color:</label>
+            <input type="color" id="mainColor" value="#ffffff">
+        </div>
+        <div>
+            <label for="subColor">Sub Color:</label>
+            <input type="color" id="subColor" value="#000000">
+        </div>
+        <div>
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor" value="#000000">
+        </div>
+        <div>
+            <label for="message1">Message 1:</label>
+            <input type="text" id="message1" value="Hello!">
+        </div>
+        <div>
+            <label for="message2">Message 2 (Optional):</label>
+            <input type="text" id="message2" value="">
+        </div>
+        <div>
+            <label for="message3">Message 3 (Optional):</label>
+            <input type="text" id="message3" value="">
+        </div>
+        <div>
+            <label for="refreshRate">Refresh Rate: <span id="refreshRateValue">1</span> sec</label>
+            <input type="range" id="refreshRate" min="1" max="10" value="1">
+        </div>
+        <div>
+            <label for="subColorHeight">Sub Color Height: <span id="subColorHeightValue">5</span>%</label>
+            <input type="range" id="subColorHeight" min="0" max="25" value="5">
+        </div>
+        <p>Please unlock screenRotation, or change to landscape Orientation</p>
+        <button id="goFullscreen">Go Fullscreen!</button>
+        <hr>
+        <div class="url-share-container">
+            Share this Colors to your friend! <br>
+            <input type="text" id="urlText" readonly>
+            <button id="shareButton">Share</button>
+            <div id="qrcode"></div>
+        </div>
+        <div id="pastMessages">
+            <h3>Past Faves</h3>
+            <div id="messageGrid"></div>
+        </div>
+    </div>
+
+    <div id="fullscreenPage" style="display:none;">
+        <div id="topBar"></div>
+        <span id="fullscreenText"></span>
+        <div id="bottomBar"></div>
+    </div>
+
+
+    <script src="qrcode.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>推し色に染まれ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="prepPage">
+        <div id="langSwitcher">
+            Language: JA / <a href="en.html" lang="en">EN</a>
+        </div>
+
+        <h1>推し色に染まれ</h1>
+        <div>
+            <label for="mainColor">メイン色:</label>
+            <input type="color" id="mainColor" value="#ffffff">
+        </div>
+        <div>
+            <label for="subColor">サブ色:</label>
+            <input type="color" id="subColor" value="#000000">
+        </div>
+        <div>
+            <label for="textColor">文字色:</label>
+            <input type="color" id="textColor" value="#000000">
+        </div>
+        <div>
+            <label for="message1">テキスト1:</label>
+            <input type="text" id="message1" value="Hello!">
+        </div>
+        <div>
+            <label for="message2">テキスト2 (任意):</label>
+            <input type="text" id="message2" value="">
+        </div>
+        <div>
+            <label for="message3">テキスト3 (任意):</label>
+            <input type="text" id="message3" value="">
+        </div>
+        <div>
+            <label for="refreshRate">切替速度: <span id="refreshRateValue">1</span> 秒</label>
+            <input type="range" id="refreshRate" min="1" max="10" value="1">
+        </div>
+        <div>
+            <label for="subColorHeight">サブ色幅: <span id="subColorHeightValue">5</span>%</label>
+            <input type="range" id="subColorHeight" min="0" max="25" value="10">
+        </div>
+        <p>スマホの人は回転ロックをオフにするか、横長に持ち替えてください</p>
+        <button id="goFullscreen">これで行く</button>
+        <hr>
+        <div class="url-share-container">
+            友達にシェアする<br>
+            <input type="text" id="urlText" readonly>
+            <button id="shareButton">Share</button>
+            <div id="qrcode"></div>
+        </div>
+        <div id="pastMessages">
+            <h3>最近の推し色</h3>
+            <div id="messageGrid"></div> 
+        </div>
+    </div>
+
+    <div id="fullscreenPage" style="display:none;">
+        <div id="topBar"></div>
+        <span id="fullscreenText"></span>
+        <div id="bottomBar"></div>
+    </div>
+
+    <script src="qrcode.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
