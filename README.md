@@ -17,4 +17,4 @@ Show Your Color! is a simple web app that lets you display vibrant messages on y
 *   Adjustable refresh rate
 *   Easy sharing via QR code
 
-**Get started now!** ➡️ [link]
+**Get started now!** ➡️ https://nanyogk.github.io/favecolor 
