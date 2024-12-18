@@ -3,7 +3,7 @@
 
 # **Try it Now!** -> https://nanyogk.github.io/favecolor 
 
-<img src="Gemini_Generated_Image_faveColor.jpeg)" width="480px">
+<img src="Gemini_Generated_Image_faveColor.jpeg" width="480px">
 
 **Light up the stadium, concert, or school event with your message!**
 
